@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Takahiro OTa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <section class="logo">
+      <i class="fa-brands fa-teamspeak"></i>
+      <h3 class="name-logo">Taka</h3>
+    </section>
+    <nav>
+      <ul>
+        <li><a href="#" onClick="home()">HOME</a></li>
+        <li><a href="#" onClick="about()">ABOUT ME</a></li>
+        <li><a href="#" onClick="project()">PROJECTS</a></li>
+        <li><a href="#" onClick="contact()">CONTACT ME</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    
+    <div class="sample-accordion">
+      <div class="ac-content">
+        
+        <label class="label-accordion" for="ac-cap1">HOME</label>
+        <input id="ac-cap1" type="radio" name="ac" checked>
+        <div id="home" class="ac-cont">
+          <section class="home-section">
+            <div>
+              <p>Hello, My name is</p>
+              <h1>TAKAHIRO OTA</h1>
+            </div>
+            <button type="button" class="abouts">MORE INFORMATION</button>
+          </section>
+        </div>
+
+        <label class="label-accordion" for="ac-cap2">ABOUT ME</label>
+        <input id="ac-cap2" type="radio" name="ac">
+        <div id="about" class="ac-cont">
+          <!-- <div class="chart-wrapper">
+            <canvas id="myChart"></canvas>
+          </div> -->
+          <section class="about-section">
+            <figure>
+              <img class="mypic" src="./img/mypic02.PNG" alt="mypic">
+              <figcaption>
+                <p>
+                  My name is Takahiro Ota who is international student from Japan. I'm studying about web development at the Tamwood International College for the future. And, my dream is be the fantastic web developer. I have already studied HTML, CSS, PHP, Database and React js. After 3month I'm suppose to graduate at the Tamwood International College. Then I'm gonna get the skill of JavaScript.
+              </p>
+              </figcaption>
+            </figure>
+            <article class="education">
+              <h3>Education</h3>
+              <div>
+                <h5>Okinawa International University (April/17 - March/21)</h5>
+                <h6>- Department of Industry and Information Science -</h6>
+                
+              </div>
+              <div>
+                <h5>Tamwood International College (June/22 - Nov/22)</h5>
+                <h6>- Web Developer Course -</h6>
+              </div>
+            </article>
+            <article class="skill">
+            <h3>Skill</h3>
+            <section>
+              <article class="pro-lang">
+                <h4>Programming Language</h4>
+                <section>
+                </section>
+              </article>
+              <article class="lang">
+                  <h4>Language</h4>
+                  <div>
+                    <p>Japanese</p>
+                    <p>-</p>
+                    <p>fullentry</p>
+                  </div>
+                  <div>
+                    <p>English</p>
+                    <p>-</p>
+                    <p>intermidiate</p>
+                  </div>
+              </article>
+            </section>
+          </section>
+        </div>
+        <label class="label-accordion" for="ac-cap3">PROJECTS</label>
+        <input id="ac-cap3" type="radio" name="ac">
+        <div class="ac-cont">
+          <h2>Projects</h2>
+          <figure>
+            <img src="" alt="">
+            <figcaption>
+              <p>HTML</p>
+            </figcaption>
+            <img src="" alt="">
+            <figcaption>
+              <p>PHP</p>
+            </figcaption>
+            <img src="" alt="">
+            <figcaption>
+              <p>React</p>
+            </figcaption>
+            <img src="" alt="">
+            <figcaption>
+              <p>Angular</p>
+            </figcaption>
+          </figure>
+        </div>
+    
+        <label class="label-accordion" for="ac-cap4">CONTACT ME</label>
+        <input id="ac-cap4" type="radio" name="ac">
+        <div class="ac-cont">
+          <article>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+                <a href="#">ota7281@gmail.com</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+                <a href="#">+1 236-788-8441</a>
+            </div>
+        </article>
+        <article>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </article>
+        <article>
+            <form action="#">
+                <div>
+                    <label id="form-label" for="section-fname">Your Name
+                      <section>
+                          <input id="input-fname" type="text" placeholder="First Name"/>
+                          <input type="text" placeholder="Last Name"/>
+                      </section>
+                    </label>
+                </div>
+                <div>
+                    <label id="form-label" for="input-email">Email</label>
+                    <input id="input-email" type="email" placeholder="Email"/>
+                </div>
+                <div>
+                    <label id="form-label" for="input-phone">Phone Number</label>
+                    <input id="input-phone" type="text" placeholder="Phone Number">
+                </div>
+                <div>
+                    <label id="form-label" for="text-message">Your Message</label>
+                    <textarea id="text-message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </article>
+        </div>
+      <!--ac-content--></div>
+      <!--sample-accordion--></div>
+  </main>
+  <footer>
+    <section class="sns-link">
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+    </section>
+    <section class="logo">
+      <i class="fa-brands fa-teamspeak"></i>
+      <h3 class="name-logo">Taka</h3>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script src="./src.js"></script>
+</body>
+</html>

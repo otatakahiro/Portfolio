@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+nav {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  background-color: lightgray;
+}
+
+li {
+  display: flex;
+}
+
+li > a {
+  background-color: lightblue;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+main{
+  width: 100%;
+  height: 600px;
+}
+
+figure{
+  display: flex;
+  column-gap: 10%;
+}
+figcaption{
+  display: flex;
+  align-items: center;
+}
+figure p{
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  width: 100%;
+}
+
+footer{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: lightgray;
+}
+
+#home{
+  background-color: black;
+}
+#about{
+  background-color: white;
+}
+
+.logo{
+  display: flex;
+  font-size: 30px;
+  padding: 20px 0 20px 20px;
+  width: 8%;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  height: 100%;
+}
+.home-section > div{
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted #F8F8FF;
+  width: 350px;
+  height: 210px;
+  justify-content: center;
+  align-items: center;
+}
+.home-section p{
+  color: #F8F8FF;
+  font-size: 20px;
+}
+.home-section h1{
+  font-size: 40px;
+  color: #F8F8FF;
+}
+.about-section{
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10%;
+  row-gap: 30px;
+}
+.abouts{
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: grab;
+}
+.about-section h3{
+  font-size: 25px;
+}
+.about-section h4,
+.about-section h5{
+  font-size: 20px;
+}
+.about-section h6{
+  font-size: 18px;
+}
+.education{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.skill{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.skill > section{
+  display: flex;
+  width: 100%;
+}
+.skill article{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 50%;
+}
+.skill div{
+  display: flex;
+  column-gap: 20px;
+}
+.skill p{
+  font-size: 20px;
+}
+
+
+
+.logo:last-child{
+  width: 100%;
+  padding: 0;
+  padding-bottom: 10px;
+  justify-content: center;
+  column-gap: 10px;
+}
+.sns-link{
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+  position: absolute;
+  font-size: 25px;
+  padding-left: 50px;
+}
+
+.fa-teamspeak{
+  color: red;
+}
+.name-logo{
+  color: darkgray;
+}
+
+.sample-accordion {
+  overflow: hidden;
+  height: 600px;
+}
+.sample-accordion .ac-content {
+  display: flex;
+  justify-content: center;
+}
+
+.ac-content {
+  width: 100%;
+}
+.sample-accordion .label-accordion {
+  height: 600px;
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+  width: 15%;
+}
+.sample-accordion .label-accordion:nth-child(even) {
+  background-color: #fff;
+}
+.sample-accordion .label-accordion:nth-child(odd) {
+  background-color: black;
+}
+.sample-accordion .label-accordion:hover {
+  background: #ccc;
+}
+.sample-accordion input[name="ac"] {
+  display: none;
+}
+.sample-accordion .ac-cont {
+  transition: 0.2s;
+  overflow-y: auto;
+  height: 580px;
+  background: #ddd;
+  border-right: 1px solid #fff;
+  padding: 0 10px;
+  display: none;
+}
+.sample-accordion input[name="ac"]:checked + .ac-cont {
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
+
+.mypic {
+  width: 250px;
+  height: 320px;
+  border-radius: 50px;
+}
+#form-label{
+  display: flex;
+  flex-direction: column;
+}
+.aboutpage:checked{
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+  display: block;
+}
+
+/* .chart-wrapper {
+  width: 95vh;
+  margin: auto;
+ }  */
