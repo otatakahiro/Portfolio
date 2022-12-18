@@ -13,7 +13,8 @@ header{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: lightgray;
+  background-color: black;
+  border-bottom: 2px solid #fff;
 }
 nav {
   width: 35%;
@@ -29,7 +30,7 @@ ul {
   justify-content: space-around;
   text-decoration: none;
   list-style: none;
-  background-color: lightgray;
+  background-color: black;
 }
 
 li {
@@ -37,7 +38,7 @@ li {
 }
 
 li > a {
-  background-color: lightblue;
+  background-color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 30px;
@@ -70,7 +71,8 @@ footer{
   display: flex;
   align-items: center;
   position: relative;
-  background-color: lightgray;
+  background-color: #fff;
+  /* border-top: 2px solid #fff; */
 }
 
 #home{
@@ -87,6 +89,7 @@ footer{
   width: 8%;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .home-section{
   display: flex;
@@ -116,7 +119,7 @@ footer{
 .about-section{
   display: flex;
   flex-direction: column;
-  padding: 40px 10%;
+  padding: 50px 10%;
   row-gap: 30px;
 }
 .abouts{
@@ -146,12 +149,13 @@ footer{
 }
 .skill > section{
   display: flex;
+  flex-direction: column;
+  row-gap: 30px;
   width: 100%;
 }
 .skill article{
   display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+  column-gap: 20px;
   width: 50%;
 }
 .skill div{
@@ -161,8 +165,10 @@ footer{
 .skill p{
   font-size: 20px;
 }
-
-
+.pro-lang{
+  display: flex;
+  flex-direction: column;
+}
 
 .logo:last-child{
   width: 100%;
@@ -191,6 +197,8 @@ footer{
   overflow: hidden;
   height: 600px;
 }
+
+
 .sample-accordion .ac-content {
   display: flex;
   justify-content: center;
@@ -199,35 +207,52 @@ footer{
 .ac-content {
   width: 100%;
 }
-.sample-accordion .label-accordion {
+.label-accordion {
   height: 600px;
   display: block;
   cursor: pointer;
   border-bottom: 1px solid #fff;
   width: 15%;
+  padding-top: 50px;
+  text-align: center;
 }
-.sample-accordion .label-accordion:nth-child(even) {
-  background-color: #fff;
-}
-.sample-accordion .label-accordion:nth-child(odd) {
-  background-color: black;
-}
-.sample-accordion .label-accordion:hover {
+.label-accordion:hover {
   background: #ccc;
+  font-size: 20px;
 }
-.sample-accordion input[name="ac"] {
+.label-accordion:nth-child(even) {
+  background-color: #fff;
+  color: black;
+}
+.label-accordion:nth-child(even) + :checked{
+  border-right: 3px solid #fff;
+}
+
+
+.label-accordion:nth-child(odd) {
+  background-color: black;
+  color: #fff;
+}
+input[name="ac"] {
   display: none;
 }
-.sample-accordion .ac-cont {
+.ac-cont {
   transition: 0.2s;
   overflow-y: auto;
   height: 580px;
-  background: #ddd;
   border-right: 1px solid #fff;
   padding: 0 10px;
   display: none;
 }
-.sample-accordion input[name="ac"]:checked + .ac-cont {
+.ac-cont:nth-child(even){
+  background-color: #fff;
+  border-left: 2px solid black;
+}
+.ac-cont:nth-child(odd){
+  background-color: black;
+  border-left: 2px solid #fff;
+}
+input[name="ac"]:checked + .ac-cont {
   width: 100%;
   padding: 10px;
   display: block;
@@ -249,7 +274,116 @@ footer{
   display: block;
 }
 
-/* .chart-wrapper {
-  width: 95vh;
-  margin: auto;
- }  */
+.chart-wrapper {
+  width: 300px;
+  /* margin: auto; */
+ }
+
+#myChart{
+  width: 200px;
+}
+
+.projects-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects-section > article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  column-gap: 80px;
+  padding-top: 50px;
+  row-gap: 50px;
+  width: 760px;
+  margin: 0;
+}
+.projects-section figure {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.projects-section img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  outline: 1px solid #fff;
+}
+.projects-section p{
+  color: #fff;
+  text-align: center;
+}
+
+.contact-section{
+  display: flex;
+  padding: 50px 10%;
+  column-gap: 50px;
+}
+.left-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  font-size: 18px;
+  width: 40%;
+}
+.left-contact > div{
+  display: flex;
+  column-gap: 30px;
+}
+.left-contact i{
+  color: black;
+}
+.left-contact a {
+  text-decoration: none;
+}
+.link{
+  display: flex;
+  justify-content: center;
+}
+
+.right-contact {
+  width: 100%;
+}
+form{
+  border: 1px solid black;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+form section {
+  width: 100%;
+  display: flex;
+  column-gap: 1%;
+}
+
+form input{
+  font-size: 18px;
+  width: 100%;
+}
+#input-email,
+#input-phone{
+  width: 99.3%;
+}
+
+#text-message{
+  width: 99.7%;
+}
+
+form > button{
+  width: 30%;
+  height: 40px;
+  font-size: 15px;
+}
+

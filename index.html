@@ -46,9 +46,6 @@
         <label class="label-accordion" for="ac-cap2">ABOUT ME</label>
         <input id="ac-cap2" type="radio" name="ac">
         <div id="about" class="ac-cont">
-          <!-- <div class="chart-wrapper">
-            <canvas id="myChart"></canvas>
-          </div> -->
           <section class="about-section">
             <figure>
               <img class="mypic" src="./img/mypic02.PNG" alt="mypic">
@@ -73,11 +70,6 @@
             <article class="skill">
             <h3>Skill</h3>
             <section>
-              <article class="pro-lang">
-                <h4>Programming Language</h4>
-                <section>
-                </section>
-              </article>
               <article class="lang">
                   <h4>Language</h4>
                   <div>
@@ -91,76 +83,94 @@
                     <p>intermidiate</p>
                   </div>
               </article>
+              <article class="pro-lang">
+                <h4>Programming Language</h4>
+                <section>
+                  <div class="chart-wrapper">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </section>
+              </article>
             </section>
           </section>
         </div>
         <label class="label-accordion" for="ac-cap3">PROJECTS</label>
         <input id="ac-cap3" type="radio" name="ac">
-        <div class="ac-cont">
-          <h2>Projects</h2>
-          <figure>
-            <img src="" alt="">
-            <figcaption>
-              <p>HTML</p>
-            </figcaption>
-            <img src="" alt="">
-            <figcaption>
-              <p>PHP</p>
-            </figcaption>
-            <img src="" alt="">
-            <figcaption>
-              <p>React</p>
-            </figcaption>
-            <img src="" alt="">
-            <figcaption>
-              <p>Angular</p>
-            </figcaption>
-          </figure>
+        <div id="projects" class="ac-cont">
+          <section class="projects-section">
+            <article>
+              <figure>
+                <img src="./img/img01.jpg" alt="Hobbies">
+                <figcaption>
+                  <p>HTML</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="./img/img02.jpg" alt="PURL">
+                <figcaption>
+                  <p>PHP / React</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="./img/img03.jpg" alt="Sudoku">
+                <figcaption>
+                  <p>JavaScript</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="./img/img04.jpg" alt="Peekabook">
+                <figcaption>
+                  <p>Angular</p>
+                </figcaption>
+              </figure>
+            </article>
+          </section>
         </div>
     
         <label class="label-accordion" for="ac-cap4">CONTACT ME</label>
         <input id="ac-cap4" type="radio" name="ac">
         <div class="ac-cont">
-          <article>
-            <div>
-              <i class="fa-solid fa-envelope"></i>
+          <section class="contact-section">
+            <article class="left-contact">
+              <div>
+                <i class="fa-solid fa-envelope"></i>
                 <a href="#">ota7281@gmail.com</a>
-            </div>
-            <div>
-              <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
                 <a href="#">+1 236-788-8441</a>
-            </div>
-        </article>
-        <article>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </article>
-        <article>
-            <form action="#">
+              </div>
+              <div class="link">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </article>
+            <article class="right-contact">
+              <form action="#">
                 <div>
-                    <label id="form-label" for="section-fname">Your Name
-                      <section>
-                          <input id="input-fname" type="text" placeholder="First Name"/>
-                          <input type="text" placeholder="Last Name"/>
-                      </section>
-                    </label>
+                  <label id="form-label" for="section-fname">Your Name</label>
+                  <section>
+                    <input id="input-fname" type="text" placeholder="First Name"/>
+                    <input type="text" placeholder="Last Name"/>
+                  </section>
                 </div>
                 <div>
-                    <label id="form-label" for="input-email">Email</label>
-                    <input id="input-email" type="email" placeholder="Email"/>
+                  <label id="form-label" for="input-email">Email</label>
+                  <input id="input-email" type="email" placeholder="Email"/>
                 </div>
                 <div>
-                    <label id="form-label" for="input-phone">Phone Number</label>
-                    <input id="input-phone" type="text" placeholder="Phone Number">
+                  <label id="form-label" for="input-phone">Phone Number</label>
+                  <input id="input-phone" type="text" placeholder="Phone Number">
                 </div>
                 <div>
-                    <label id="form-label" for="text-message">Your Message</label>
-                    <textarea id="text-message" cols="30" rows="10"></textarea>
+                  <label id="form-label" for="text-message">Your Message</label>
+                  <textarea id="text-message" cols="30" rows="10"></textarea>
                 </div>
                 <button type="submit">Send Message</button>
-            </form>
-        </article>
+              </form>
+            </article>
+          </section>
         </div>
       <!--ac-content--></div>
       <!--sample-accordion--></div>
