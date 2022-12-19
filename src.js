@@ -23,7 +23,12 @@ $('button').on('click',function(){
 });
 
 
-$('#ac-cap2').on('click', function(){
+$('#ac-cap2').click(function(){
+  var elemPos = $(this).offset().top;//要素より、50px上の
+	var windowHeight = $('#myChart').height();
+	var scroll = $('.ac-cont').scrollTop(windowHeight);
+  console.log(scroll)
+  if (windowHeight){   
   const ctx = document.getElementById('myChart');
 
 //この2つの値を設定するだけ!!
@@ -43,4 +48,25 @@ new Chart(ctx, {
     }]
   }
 })
+}
 })
+
+// const ctx = document.getElementById('myChart');
+
+// //この2つの値を設定するだけ!!
+// const percentage = 76 //グラフのパーセンテージ(76%)
+// const backgroundColor = 'rgba(255, 0, 0, 1)' //グラフの色(赤)
+
+// new Chart(ctx, {
+//   type: 'doughnut',
+//   data: {
+//     datasets: [{
+//       data: [percentage, 100 - percentage],
+//       backgroundColor: [
+//         backgroundColor,
+//         'rgba(0, 0, 0, 0)',
+//       ],
+//       borderWidth: 0
+//     }]
+//   }
+// })

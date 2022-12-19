@@ -71,8 +71,8 @@ footer{
   display: flex;
   align-items: center;
   position: relative;
-  background-color: #fff;
-  /* border-top: 2px solid #fff; */
+  background-color: black;
+  border-top: 2px solid #fff;
 }
 
 #home{
@@ -238,7 +238,7 @@ input[name="ac"] {
 }
 .ac-cont {
   transition: 0.2s;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 580px;
   border-right: 1px solid #fff;
   padding: 0 10px;
@@ -386,4 +386,3 @@ form > button{
   height: 40px;
   font-size: 15px;
 }
-
