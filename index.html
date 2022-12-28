@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-
+  
+  
 </head>
 <body>
   <header>
@@ -37,7 +37,7 @@
           <section class="home-section">
             <div>
               <p>Hello, My name is</p>
-              <h1>TAKAHIRO OTA</h1>
+              <h1 class="myName">TAKAHIRO OTA</h1>
             </div>
             <button type="button" class="abouts">MORE INFORMATION</button>
           </section>
@@ -52,7 +52,7 @@
               <figcaption>
                 <p>
                   My name is Takahiro Ota who is international student from Japan. I'm studying about web development at the Tamwood International College for the future. And, my dream is be the fantastic web developer. I have already studied HTML, CSS, PHP, Database and React js. After 3month I'm suppose to graduate at the Tamwood International College. Then I'm gonna get the skill of JavaScript.
-              </p>
+                </p>
               </figcaption>
             </figure>
             <article class="education">
@@ -86,10 +86,31 @@
               <article class="pro-lang">
                 <h4>Programming Language</h4>
                 <section>
-                  <div class="chart-wrapper">
-                    <canvas id="myChart"></canvas>
+                  <div  id="skills" class="fadein-before">
+                    <div class="chart-wrapper">
+                      <div class="chart-html">
+                        <canvas id="myChart"></canvas>
+                        <p class="iconn"><i class="fa-brands fa-html5"></i></p>
+                      </div>
+                    </div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-angular"></i>
+                    <i class="fa-brands fa-vuejs"></i>
                   </div>
-                  <div class="bottom-myChart"></div>
+                  <!-- <h1 class="h1">スクロール↓<h1>
+
+                    <section class="chartGraphBox">
+                      <h2 class="h2">チャート1</h2>
+                      <canvas id="chart1"></canvas>
+                    </section>
+                      
+                    <section class="chartGraphBox">
+                      <h2 class="h2">チャート2</h2>
+                      <canvas id="chart2"></canvas>
+                     </section> -->
                 </section>
               </article>
             </section>
@@ -127,7 +148,7 @@
             </article>
           </section>
         </div>
-    
+        
         <label class="label-accordion" for="ac-cap4">CONTACT ME</label>
         <input id="ac-cap4" type="radio" name="ac">
         <div class="ac-cont">
@@ -188,5 +209,6 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
   <script src="./src.js"></script>
+
 </body>
 </html>

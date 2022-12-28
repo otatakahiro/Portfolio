@@ -275,13 +275,31 @@ input[name="ac"]:checked + .ac-cont {
 }
 
 .chart-wrapper {
-  width: 300px;
-  /* margin: auto; */
- }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.chart-html {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #myChart{
-  width: 200px;
+  width: 350px;
+  clip: rect(30px 30px 30px 30px);
+  margin: 0 !important;
 }
+
+ .iconn{
+  position: absolute;
+  transform: translateY(6px);
+ }
+
+
 
 .projects-section{
   width: 100%;
@@ -385,4 +403,62 @@ form > button{
   width: 30%;
   height: 40px;
   font-size: 15px;
+}
+
+/* .h1{
+  margin-bottom: 500px;
+}
+
+
+.h1,.h2{
+  text-align: center;
+}
+
+.chartGraphBox{
+  margin-bottom: 500px;
+} */
+.fa-html5 {
+  color: orange;
+}
+.fa-css3-alt{
+  color: deepskyblue;
+}
+.fa-php{
+  color: mediumpurple;
+}
+.fa-react{
+  color: lightskyblue;
+}
+.fa-js{
+  color: darkgoldenrod;
+}
+.fa-angular{
+  color: red;
+}
+.fa-vuejs{
+  color: yellowgreen;
+}
+.fa-html5,
+.fa-css3-alt,
+.fa-php,
+.fa-react,
+.fa-js,
+.fa-angular,
+.fa-vuejs{
+  font-size: 50px;
+}
+.fadein-before{
+  /*透過度の設定。0で表示されなくなる。*/
+  opacity: 0;
+  /*要素を左に100pxずらしたところに配置する*/
+  transform:translateX(-100px);
+  /*透過度と表示位置を1秒かけて変化させる*/
+  transition:opacity 1s,transform 1s;
+}
+
+.fadein-after{
+  /*透過度の設定。非表示から表示にする。*/
+  opacity: 1;
+  /*要素を100px左にしていたのを元の位置に戻す*/
+  transform: translate(0);
 }
