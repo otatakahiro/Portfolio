@@ -121,6 +121,7 @@ footer{
   flex-direction: column;
   padding: 50px 10%;
   row-gap: 30px;
+  /* width: auto; */
 }
 .abouts{
   padding: 10px 20px;
@@ -156,7 +157,7 @@ footer{
 .skill article{
   display: flex;
   column-gap: 20px;
-  width: 50%;
+  width: 100%;
 }
 .skill div{
   display: flex;
@@ -240,6 +241,7 @@ input[name="ac"] {
   transition: 0.2s;
   overflow-y: scroll;
   height: 580px;
+  width: 100% !important;
   border-right: 1px solid #fff;
   padding: 0 10px;
   display: none;
@@ -263,6 +265,11 @@ input[name="ac"]:checked + .ac-cont {
   height: 320px;
   border-radius: 50px;
 }
+#skills{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 #form-label{
   display: flex;
   flex-direction: column;
@@ -275,12 +282,17 @@ input[name="ac"]:checked + .ac-cont {
 }
 
 .chart-wrapper {
-  width: 100%;
   display: flex;
+  /* flex-direction: row; */
   flex-wrap: wrap;
 }
-.chart-html {
-  width: 100%;
+.chart-html,
+.chart-css,
+.chart-php,
+.chart-react,
+.chart-js,
+.chart-angular,
+.chart-vue {
   margin: 0;
   position: relative;
   display: flex;
@@ -288,18 +300,22 @@ input[name="ac"]:checked + .ac-cont {
   align-items: center;
 }
 
-#myChart{
+#myChart,
+#myChart2,
+#myChart3,
+#myChart4,
+#myChart5,
+#myChart6,
+#myChart7{
   width: 350px;
   clip: rect(30px 30px 30px 30px);
   margin: 0 !important;
 }
 
- .iconn{
-  position: absolute;
-  transform: translateY(6px);
- }
-
-
+.iconn{
+position: absolute;
+transform: translateY(6px);
+}
 
 .projects-section{
   width: 100%;
@@ -405,18 +421,6 @@ form > button{
   font-size: 15px;
 }
 
-/* .h1{
-  margin-bottom: 500px;
-}
-
-
-.h1,.h2{
-  text-align: center;
-}
-
-.chartGraphBox{
-  margin-bottom: 500px;
-} */
 .fa-html5 {
   color: orange;
 }
