@@ -2,13 +2,11 @@
   margin: 0;
   padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=League+Spartan:wght@300;500;700;800&family=Rubik+Bubbles&display=swap');
-
 html{
   scroll-behavior: smooth;
 }
 body{
-  font-family: "Inconsolata", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -106,17 +104,23 @@ footer{
   display: flex;
   flex-direction: column;
   border: 2px dotted #F8F8FF;
-  width: 350px;
-  height: 210px;
+  width: 400px;
+  height: 250px;
   justify-content: center;
   align-items: center;
 }
 .home-section p{
   color: #F8F8FF;
-  font-size: 20px;
+  font-size: 30px;
+  padding-bottom: 10px;
 }
-.home-section h1{
-  font-family: "Rubik Bubbles", monospace;
+.myName{
+  letter-spacing: 1px;
+  font-size: 40px;
+  color: #F8F8FF;
+}
+.jpName{
+  font-family: 'Yuji Boku', serif;
   font-size: 40px;
   color: #F8F8FF;
 }
@@ -222,10 +226,12 @@ footer{
   padding-top: 50px;
   text-align: center;
 }
-.label-accordion:hover {
-  background: #ccc;
+.label-accordion:hover{
   font-size: 20px;
 }
+/* .label-accordion:checked{
+  font-size: 20px;
+} */
 .label-accordion:nth-child(even) {
   background-color: #fff;
   color: black;
@@ -233,8 +239,6 @@ footer{
 .label-accordion:nth-child(even) + :checked{
   border-right: 3px solid #fff;
 }
-
-
 .label-accordion:nth-child(odd) {
   background-color: black;
   color: #fff;
