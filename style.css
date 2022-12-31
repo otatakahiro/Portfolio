@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=League+Spartan:wght@300;500;700;800&family=Rubik+Bubbles&display=swap');
+
 html{
   scroll-behavior: smooth;
 }
 body{
+  font-family: "Inconsolata", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -113,6 +116,7 @@ footer{
   font-size: 20px;
 }
 .home-section h1{
+  font-family: "Rubik Bubbles", monospace;
   font-size: 40px;
   color: #F8F8FF;
 }
@@ -169,6 +173,7 @@ footer{
 .pro-lang{
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
 }
 
 .logo:last-child{
@@ -285,6 +290,9 @@ input[name="ac"]:checked + .ac-cont {
   display: flex;
   /* flex-direction: row; */
   flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px !important;
+
 }
 .chart-html,
 .chart-css,
@@ -296,8 +304,12 @@ input[name="ac"]:checked + .ac-cont {
   margin: 0;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 150px;
+
+
 }
 
 #myChart,
@@ -307,14 +319,16 @@ input[name="ac"]:checked + .ac-cont {
 #myChart5,
 #myChart6,
 #myChart7{
-  width: 350px;
-  clip: rect(30px 30px 30px 30px);
-  margin: 0 !important;
+  z-index: -1;
+  /* width: 1000px; */
+  /* margin: 0 !important; */
+  
 }
 
 .iconn{
 position: absolute;
-transform: translateY(6px);
+/* transform: translateY(-2px); */
+padding-bottom: 30px;
 }
 
 .projects-section{
@@ -422,25 +436,25 @@ form > button{
 }
 
 .fa-html5 {
-  color: orange;
+  color: #E34C26;
 }
 .fa-css3-alt{
-  color: deepskyblue;
+  color: #264DE4;
 }
 .fa-php{
-  color: mediumpurple;
+  color: #787CB5;
 }
 .fa-react{
-  color: lightskyblue;
+  color: #61DBFB;
 }
 .fa-js{
-  color: darkgoldenrod;
+  color: #F0DB4F;
 }
 .fa-angular{
-  color: red;
+  color: #DD1D16;
 }
 .fa-vuejs{
-  color: yellowgreen;
+  color: #41B883;
 }
 .fa-html5,
 .fa-css3-alt,
