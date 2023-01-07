@@ -124,6 +124,19 @@ footer{
   font-size: 40px;
   color: #F8F8FF;
 }
+.resume{
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: grab;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+.resume:hover{
+  cursor: grabbing;
+  color: #DD1D16;
+}
 .about-section{
   display: flex;
   flex-direction: column;
@@ -134,7 +147,11 @@ footer{
 .abouts{
   padding: 10px 20px;
   border-radius: 10px;
+  background-color: white;
   cursor: grab;
+}
+.abouts:hover{
+  color: #DD1D16;
 }
 .about-section h3{
   font-size: 25px;

@@ -18,6 +18,11 @@ let project = function(){
 let contact = function(){
   ac[3].click();
 };
+// $(function() {
+//   $("input").click(function() {
+//       $(this).toggleClass("click");
+//   });
+// });
 $('button').on('click',function(){
   ac[1].click();
 });
