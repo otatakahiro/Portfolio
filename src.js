@@ -56,6 +56,7 @@ const ctx7 = document.getElementById('myChart7');
 // const percentage = 76 //グラフのパーセンテージ(76%)
 // const backgroundColor = 'rgba(255, 0, 0, 1)' //グラフの色(赤)
 //スクロール時に要素をフェードインさせるイベントを設定する
+let scrollFlag = false;
 Fade.addEventListener('scroll', () => {
     //フェードインする要素の上部の位置を取得する
     const FADEIN_ELEM_TOP = FADEIN_ELEM.getBoundingClientRect().top;
@@ -66,7 +67,9 @@ Fade.addEventListener('scroll', () => {
     // console.log(WINDOW_HEIGHT);
     //画面に表示された時にフェードインさせる処理
     if (WINDOW_HEIGHT > (FADEIN_ELEM_TOP) + 200) {
+      if(!scrollFlag){
         FADEIN_ELEM.classList.add('fadein-after');
+        scrollFlag = true;
         new Chart(ctx, {
           type: 'doughnut',
           data: {
@@ -193,9 +196,12 @@ Fade.addEventListener('scroll', () => {
             }
           }
         })
+      }
+        
     }else{
         FADEIN_ELEM.classList.remove('fadein-after');
     }
 });
+
 
 

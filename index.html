@@ -12,7 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./sample.htaccess">
   <link rel="stylesheet" href="./script.php">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Sigmar+One&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/0ebe9194eb762a9b228dc9583506a35f?family=Thicker+Destroy" rel="stylesheet" type="text/css"/>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
@@ -36,7 +37,7 @@
   <main>
     <div class="sample-accordion">
       <div class="ac-content">
-        <label class="label-accordion" for="ac-cap1">HOME</label>
+        <label class="label-accordion" for="ac-cap1"><span>HOME</span></label>
         <input id="ac-cap1" type="radio" name="ac" checked>
         <div id="home" class="ac-cont">
           <section class="home-section">
@@ -209,21 +210,21 @@
                 <div>
                   <label id="form-label" for="section-fname">Your Name</label>
                   <section>
-                    <input id="input-fname" type="text" placeholder="First Name" name="fname" value="<?php echo $fname; ?>"/>
-                    <input type="text" placeholder="Last Name" name="lname" value="<?php echo $lname; ?>"/>
+                    <input id="input-fname" type="text" placeholder="First Name" name="fname"/>
+                    <input type="text" placeholder="Last Name" name="lname"/>
                   </section>
                 </div>
                 <div>
                   <label id="form-label" for="input-email">Email</label>
-                  <input id="input-email" type="email" placeholder="Email" name="email" value="<?php echo $email; ?>"/>
+                  <input id="input-email" type="email" placeholder="Email" name="email"/>
                 </div>
                 <div>
                   <label id="form-label" for="input-phone">Phone Number</label>
-                  <input id="input-phone" type="text" placeholder="Phone Number" name="phone" value="<?php echo $phone; ?>"/>
+                  <input id="input-phone" type="text" placeholder="Phone Number" name="phone"/>
                 </div>
                 <div>
                   <label id="form-label" for="text-message">Your Message</label>
-                  <textarea id="text-message" cols="30" rows="10" name="message" value="<?php echo $message; ?>"></textarea>
+                  <textarea id="text-message" cols="30" rows="10" name="message"></textarea>
                 </div>
                 <button type="submit">Send Message</button>
               </form>
