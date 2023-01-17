@@ -1,3 +1,16 @@
+// // .s_10 .accordion_one
+// $(function(){
+//   //.accordion_oneの中の.accordion_headerがクリックされたら
+//   $('.sample-accordion .ac-content input').click(function(){
+//     //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerの横幅を開いたり閉じたりする。
+//     $(this).next().animate({width:'toggle'}, {duration: 2000, easing: 'swing'});
+//     $(this).toggleClass("ac-cont");
+//     //クリックされた.accordion_oneの中の.accordion_header以外の.accordion_oneの中の.accordion_headerに隣接する.accordion_oneの中の.accordion_innerを閉じる
+//     $('.sample-accordion .ac-content input').not($(this)).next().animate({width:'hide'},{duration:2000, easing: 'swing'});
+//     $('.ac-cont').not($(this)).removeClass("open");
+//     $('.ac-cont').not($(this)).toggleClass("open");
+//   });
+// });
 let ac = $('input');
 let a = $('a');
 let aboutPage = ac[1];
@@ -11,7 +24,8 @@ let home = function(){
 };
 let about = function(){
   ac[1].click();
-};
+  // $('#home').slideDown(500);
+}
 let project = function(){
   ac[2].click();
 };
@@ -26,6 +40,7 @@ let contact = function(){
 $('button').on('click',function(){
   ac[1].click();
 });
+
 
 //フェードインさせる要素を取得
 const FADEIN_ELEM = document.getElementById('skills');
@@ -182,3 +197,5 @@ Fade.addEventListener('scroll', () => {
         FADEIN_ELEM.classList.remove('fadein-after');
     }
 });
+
+

@@ -279,13 +279,13 @@ input[name="ac"] {
   display: none;
 }
 .ac-cont {
-  transition: 0.2s;
   overflow-y: scroll;
   height: 580px;
   width: 100% !important;
   /* border-right: 1px solid #fff; */
   padding: 0 10px;
   display: none;
+  transition-duration: 500s;
 }
 /* .ac-cont:nth-child(even){
   background-color: #fff;
@@ -295,11 +295,18 @@ input[name="ac"] {
   background-color: black;
   border-left: 2px solid #fff;
 } */
-input[name="ac"]:checked + .ac-cont {
+input[name="ac"]:checked + .ac-cont{
   width: 100%;
   padding: 10px;
   display: block;
 }
+
+/* input.open{
+  content: none;
+}
+input.open{
+  content: "";
+} */
 
 .mypic {
   width: 250px;
