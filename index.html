@@ -4,16 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
   <title>Takahiro Ota</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="./sample.htaccess">
-  <link rel="stylesheet" href="./script.php">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Sigmar+One&family=Yuji+Boku&display=swap" rel="stylesheet">
   <link href="//db.onlinewebfonts.com/c/0ebe9194eb762a9b228dc9583506a35f?family=Thicker+Destroy" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("TdLE_Gd8-r584oKMY");
+    })();
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
@@ -37,7 +41,7 @@
   <main>
     <div class="sample-accordion">
       <div class="ac-content">
-        <label class="label-accordion" for="ac-cap1"><span>HOME</span></label>
+        <label class="label-accordion" for="ac-cap1">HOME</label>
         <input id="ac-cap1" type="radio" name="ac" checked>
         <div id="home" class="ac-cont">
           <section class="home-section">
@@ -160,7 +164,7 @@
               </figure>
               <figure>
                 <a href="">
-                  <img src="./img/img02.jpg" alt="PURL">
+                  <img src="./img/img02.png" alt="PURL">
                 </a>
                 <figcaption>
                   <p>PHP / React</p>
@@ -168,7 +172,7 @@
               </figure>
               <figure>
                 <a href="">
-                  <img src="./img/img03.jpg" alt="Sudoku">
+                  <img src="./img/img03.png" alt="Sudoku">
                 </a>
                 <figcaption>
                   <p>JavaScript</p>
@@ -206,7 +210,8 @@
               </div>
             </article>
             <article class="right-contact">
-              <form method="post">
+              <form class="contact-form">
+                <input type="hidden" name="contact_number">
                 <div>
                   <label id="form-label" for="section-fname">Your Name</label>
                   <section>
@@ -226,7 +231,7 @@
                   <label id="form-label" for="text-message">Your Message</label>
                   <textarea id="text-message" cols="30" rows="10" name="message"></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <input type="submit">Send Message</input>
               </form>
             </article>
           </section>

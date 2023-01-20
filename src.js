@@ -1,16 +1,3 @@
-// // .s_10 .accordion_one
-// $(function(){
-//   //.accordion_oneの中の.accordion_headerがクリックされたら
-//   $('.sample-accordion .ac-content input').click(function(){
-//     //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerの横幅を開いたり閉じたりする。
-//     $(this).next().animate({width:'toggle'}, {duration: 2000, easing: 'swing'});
-//     $(this).toggleClass("ac-cont");
-//     //クリックされた.accordion_oneの中の.accordion_header以外の.accordion_oneの中の.accordion_headerに隣接する.accordion_oneの中の.accordion_innerを閉じる
-//     $('.sample-accordion .ac-content input').not($(this)).next().animate({width:'hide'},{duration:2000, easing: 'swing'});
-//     $('.ac-cont').not($(this)).removeClass("open");
-//     $('.ac-cont').not($(this)).toggleClass("open");
-//   });
-// });
 let ac = $('input');
 let a = $('a');
 let aboutPage = ac[1];
@@ -197,7 +184,6 @@ Fade.addEventListener('scroll', () => {
           }
         })
       }
-        
     }else{
         FADEIN_ELEM.classList.remove('fadein-after');
     }
@@ -205,3 +191,17 @@ Fade.addEventListener('scroll', () => {
 
 
 
+// window.onload = function() {
+//   document.getElementById('contact-form').addEventListener('submit', function(event) {
+//       event.preventDefault();
+//       // generate a five digit number for the contact_number variable
+//       this.contact_number.value = Math.random() * 100000 | 0;
+//       // these IDs from the previous steps
+//       emailjs.sendForm('contact_service', 'contact_form', this)
+//           .then(function() {
+//               console.log('SUCCESS!');
+//           }, function(error) {
+//               console.log('FAILED...', error);
+//           });
+//   });
+// }
