@@ -90,8 +90,8 @@ Fade.addEventListener('scroll', () => {
           options: {
             tooltips: {
             enabled: false
-        }
-      }
+            }
+          }
         })
         new Chart(ctx3, {
           type: 'doughnut',
@@ -186,6 +186,7 @@ Fade.addEventListener('scroll', () => {
       }
     }else{
         FADEIN_ELEM.classList.remove('fadein-after');
+        scrollFlag = false;
     }
 });
 
