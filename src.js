@@ -28,6 +28,7 @@ $('button').on('click',function(){
   ac[1].click();
 });
 
+const ProFade = document.getElementsByClassName('fade-projects');
 
 //フェードインさせる要素を取得
 const FADEIN_ELEM = document.getElementById('skills');
@@ -188,7 +189,9 @@ Fade.addEventListener('scroll', () => {
         FADEIN_ELEM.classList.remove('fadein-after');
         scrollFlag = false;
     }
+    ProFade.classList.add('fadein-before');
 });
+
 
 
 

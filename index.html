@@ -24,7 +24,7 @@
   <header>
     <section class="logo">
       <figure>
-        <img src="./img/logo.png" alt="logo" width="200px">
+        <img src="./img/logoTwo.png" alt="logo" width="200px">
       </figure>
       <!-- <i class="fa-brands fa-teamspeak"></i> -->
       <!-- <h3 class="name-logo">Taka</h3> -->
@@ -153,7 +153,7 @@
         <input id="ac-cap3" type="radio" name="ac">
         <div id="projects" class="ac-cont">
           <section class="projects-section">
-            <article>
+            <article class="fade-projects">
               <figure>
                 <a href="">
                   <img src="./img/img01.png" alt="Hobbies">
@@ -231,7 +231,7 @@
                   <label id="form-label" for="text-message">Your Message</label>
                   <textarea id="text-message" cols="30" rows="10" name="message"></textarea>
                 </div>
-                <input type="submit">Send Message</input>
+                <input name="submit" type="submit">Send Message</input>
               </form>
             </article>
           </section>
@@ -248,7 +248,7 @@
     <section class="logo">
       <figure>
         <a href="#">
-          <img src="./img/logo.png" alt="logo-footer" width="150px">
+          <img src="./img/logoTwo.png" alt="logo-footer" width="150px">
         </a>
       </figure>
     </section>
@@ -257,3 +257,40 @@
   <script src="./src.js"></script>
 </body>
 </html>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("TdLE_Gd8-r584oKMY");
+   })();
+</script>
+
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		emailjs.init("TdLE_Gd8-r584oKMY");		
+        $('input[name=submit]').click(function(e){       	 
+          e.preventDefault()
+          var templateParams = {	
+                fname: $('input[name=fname]').val(),
+                lname: $('input[name=lname').val(),
+                phone: $('input[name=phone]').val(), 
+                email : $('input[name=email]').val(),
+                message : $('textarea[name=message]').val()
+           				};
+                    
+                	console.log(templateParams);
+          emailjs.send('service_zq3vq0h', 'template_24rrmo7', templateParams)
+         	    .then(function(response) {
+         	       console.log('SUCCESS!', response.status, response.text);
+         	    }, function(error) {
+         	       console.log('FAILED...', error);
+         	    });
+        });
+        
+	  });
+    
+
+	</script>
