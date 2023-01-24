@@ -15,9 +15,10 @@ header{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: #59C1BD;
+  /* background-color: #59C1BD; */
+  background-color: #F9F7F7;
+  border-bottom: 2px solid #112D4E;
   height: 12.5vh;
-  /* border-bottom: 2px solid #59C1BD; */
 }
 nav {
   width: 35%;
@@ -33,7 +34,8 @@ ul {
   justify-content: space-around;
   text-decoration: none;
   list-style: none;
-  background-color: #59C1BD;
+  /* background-color: #59C1BD; */
+  background-color: #F9F7F7;
 }
 
 li {
@@ -41,11 +43,18 @@ li {
 }
 
 li > a {
-  background-color: #CFF5E7;
+  /* background-color: #CFF5E7; */
+  background-color: #F9F7F7;
   text-decoration: none;
   padding: 10px;
   border-radius: 30px;
-  color: #0D4C92;
+  color: #112D4E;
+  font-size: 20px;
+  transition: .5s;
+  font-weight: 700;
+}
+li > a:hover {
+  font-size: 25px;
 }
 
 main{
@@ -74,9 +83,9 @@ footer{
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #59C1BD;
-  /* position: relative; */
-  /* border-top: 2px solid #fff; */
+  /* background-color: #59C1BD; */
+  background-color: #F9F7F7;
+   border-top: 2px solid #112D4E;
 }
 
 #home,#about,#projects,#contact{
@@ -84,12 +93,9 @@ footer{
   background-size: 600px;
   background-repeat: no-repeat;
   background-position: center; */
-  background-color: #CFF5E7;
+  /* background-color: #CFF5E7; */
+  background-color: #DBE2EF;
 }
-/* #about{
-  background-color: white;
-} */
-
 .logo:first-child{
   display: flex;
   font-size: 30px;
@@ -110,35 +116,39 @@ footer{
 .home-section > div{
   display: flex;
   flex-direction: column;
-  border: 3px dotted #0D4C92;
+  border: 3px dotted #112D4E;
   width: 400px;
   height: 250px;
   justify-content: center;
   align-items: center;
 }
 .home-section p{
-  color: #0D4C92;
+  color: #112D4E;
   font-size: 30px;
   padding-bottom: 10px;
 }
 .myName{
   letter-spacing: 1px;
   font-size: 40px;
-  color: #0D4C92;
+  color: #112D4E;
 }
 .jpName{
   font-family: 'Yuji Boku', serif;
   font-size: 40px;
-  color: #0D4C92;
+  color: #112D4E;
 }
 .resume{
   padding: 10px 20px;
   font-size: 20px;
   border-radius: 10px;
   cursor: grab;
-  background-color: #A0E4CB;
+  /* background-color: #A0E4CB; */
+  background-color: #112D4E;
   text-decoration: none;
-  color: #0D4C92;
+  /* color: #112D4E;*/
+  font-weight: 700;
+  color: #DBE2EF;
+  transition: .5s;
 }
 .resume:hover{
   cursor: grabbing;
@@ -149,16 +159,18 @@ footer{
   flex-direction: column;
   padding: 50px 10%;
   row-gap: 30px;
-  color: #0D4C92;
+  color: #112D4E;
   /* width: auto; */
 }
 .abouts{
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #A0E4CB;
+  background-color: #112D4E;
   cursor: grab;
   border: none;
-  color: #0D4C92;
+  color: #DBE2EF;
+  font-weight: 700;
+  transition: .5s;
 }
 .abouts:hover{
   font-size: 20px;
@@ -221,7 +233,7 @@ footer{
   justify-content: center;
 }
 .sns-link > a{
-  color: #0D4C92;
+  color: #112D4E;
 } 
 .sns-link > a:hover{
   color: #CFF5E7;
@@ -230,7 +242,7 @@ footer{
   color: red;
 }
 .name-logo{
-  color: #0D4C92;
+  color: #112D4E;
 }
 
 .sample-accordion {
@@ -251,13 +263,8 @@ footer{
   height: 75vh;
   display: block;
   cursor: pointer;
-  /* border-bottom: 1px solid #fff; */
   width: 20%;
-  /* padding-right: 2%; */
-  /* padding-top: 50px; */
   margin: 0;
-  /* text-align: center; */
-  /* font-family: 'Thicker Destroy', fantasy; */
   font-family: 'Sigmar One',fantasy;
   text-orientation: upright;
   writing-mode: vertical-rl;
@@ -267,20 +274,20 @@ footer{
   justify-content: center;
   align-items: center;
   transition: .3s;
+  /* background-color: #112D4E; */
+  background-color: #112D4E;
+  /* color: #CFF5E7; */
+  color: #DBE2EF;
+  border-left: 1px solid #112D4E;
+  border-right: 1px solid #112D4E;
 }
 .label-accordion:hover{
-  background-color: #CFF5E7;
-  color: #0D4C92;
+  /* background-color: #CFF5E7;
+  color: #112D4E; */
+  background-color: #DBE2EF;
+  /* background-color: #112D4E\; */
+  color: #112D4E;
   font-size: 50px;
-}
-/* .label-accordion:checked{
-  font-size: 20px;
-} */
-.label-accordion{
-  background-color: #0D4C92;
-  color: #CFF5E7;
-  border-left: 2px solid #59C1BD;
-  border-right: 2px solid #59C1BD;
 }
 
 input[name="ac"] {
@@ -290,32 +297,15 @@ input[name="ac"] {
   overflow-y: scroll;
   height: 75vh;
   width: 100% !important;
-  /* border-right: 1px solid #fff; */
   padding: 0 10px;
   display: none;
-  transition-duration: 500s;
+  transition: 2s;
 }
-/* .ac-cont:nth-child(even){
-  background-color: #fff;
-  border-left: 2px solid black;
-}
-.ac-cont:nth-child(odd){
-  background-color: black;
-  border-left: 2px solid #fff;
-} */
 input[name="ac"]:checked + .ac-cont{
   width: 100%;
   padding: 10px;
   display: block;
-  transition-duration: 500s;
 }
-
-/* input.open{
-  content: none;
-}
-input.open{
-  content: "";
-} */
 
 .mypic {
   width: 250px;
@@ -340,7 +330,6 @@ input.open{
 
 .chart-wrapper {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   row-gap: 30px;
   column-gap: 30px !important;
@@ -370,14 +359,10 @@ input.open{
 #myChart6,
 #myChart7{
   z-index: -1;
-  /* width: 1000px; */
-  /* margin: 0 !important; */
-  
 }
 
 .iconn{
 position: absolute;
-/* transform: translateY(-2px); */
 padding-bottom: 42px;
 }
 
@@ -395,21 +380,21 @@ padding-bottom: 42px;
   padding: 50px 0;
   row-gap: 50px;
   width: 760px;
-  /* margin: 0; */
 }
 .projects-section figure {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  transition: .5s;
 }
 .projects-section img{
   width: 200px;
   height: 200px;
   border-radius: 35%;
-  outline: 1px solid #0D4C92;
+  outline: 1px solid #112D4E;
 }
 .projects-section p{
-  color: #0D4C92;
+  color: #112D4E;
   text-align: center;
 }
 
@@ -430,12 +415,12 @@ padding-bottom: 42px;
   column-gap: 30px;
 }
 .left-contact i{
-  color: #0D4C92;
+  color: #112D4E;
 }
 .left-contact a {
   text-decoration: none;
   font-weight: 800;
-  color: #0D4C92;
+  color: #112D4E;
 }
 .left-contact a:hover{
   color: #59C1BD;
@@ -455,7 +440,7 @@ padding-bottom: 42px;
   width: 100%;
 }
 form{
-  border: 3px dotted #0D4C92;
+  border: 3px dotted #112D4E;
   font-size: 18px;
   display: flex;
   flex-direction: column;
