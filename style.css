@@ -95,7 +95,7 @@ input[name='ac']:checked + .ac-cont{
   text-orientation: upright;
   writing-mode: vertical-rl;
   font-size: 40px;
-  letter-spacing: -35px;
+  letter-spacing: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,6 +109,7 @@ input[name='ac']:checked + .ac-cont{
   background-color: #DBE2EF;
   color: #112D4E;
   font-size: 50px;
+  letter-spacing: -15px;
 }
 .label-accordion:last-child{
    margin-right: 0;
