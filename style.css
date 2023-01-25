@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-@font-face {font-family: "Thicker Destroy"; src: url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.eot"); src: url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.woff") format("woff"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.svg#Thicker Destroy") format("svg"); }
 html{
   scroll-behavior: smooth;
 }
@@ -80,7 +79,7 @@ input[name='ac']:checked + .ac-cont{
 }
 
 .label-accordion { 
-  font-family: 'Thicker Destroy',fantasy;
+  font-family: 'Sigmar One',fantasy;
   cursor: pointer; 
   border: solid 1px transparent;
   text-align: center; 
@@ -93,7 +92,7 @@ input[name='ac']:checked + .ac-cont{
   text-orientation: upright;
   writing-mode: vertical-rl;
   font-size: 40px;
-  letter-spacing: -20px;
+  letter-spacing: -35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +105,6 @@ input[name='ac']:checked + .ac-cont{
 .label-accordion:hover{
   background-color: #DBE2EF;
   color: #112D4E;
-  letter-spacing: -15px;
   font-size: 50px;
 }
 .label-accordion:last-child{
