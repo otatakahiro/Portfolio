@@ -3,11 +3,14 @@
   padding: 0;
 }
 
+@font-face {font-family: "Thicker Destroy"; src: url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.eot"); src: url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.woff") format("woff"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0ebe9194eb762a9b228dc9583506a35f.svg#Thicker Destroy") format("svg"); }
 html{
   scroll-behavior: smooth;
 }
+
 body{
-  font-family: 'Nunito Sans', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Libre Bodoni', serif;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +50,6 @@ li > a {
   background-color: #F9F7F7;
   text-decoration: none;
   padding: 10px;
-  border-radius: 30px;
   color: #112D4E;
   font-size: 20px;
   transition: .5s;
@@ -62,7 +64,6 @@ li > a:hover {
 main { 
   position: relative; 
   display: inline-block;
-  border: solid 1px #ddd;
   width: 99.9%;
   height: 75vh;
   overflow: hidden;
@@ -79,7 +80,7 @@ input[name='ac']:checked + .ac-cont{
 }
 
 .label-accordion { 
-  font-family: 'Sigmar One',fantasy;
+  font-family: 'Thicker Destroy',fantasy;
   cursor: pointer; 
   border: solid 1px transparent;
   text-align: center; 
@@ -92,7 +93,7 @@ input[name='ac']:checked + .ac-cont{
   text-orientation: upright;
   writing-mode: vertical-rl;
   font-size: 40px;
-  letter-spacing: -35px;
+  letter-spacing: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,6 +106,7 @@ input[name='ac']:checked + .ac-cont{
 .label-accordion:hover{
   background-color: #DBE2EF;
   color: #112D4E;
+  letter-spacing: -15px;
   font-size: 50px;
 }
 .label-accordion:last-child{
@@ -433,19 +435,19 @@ padding-bottom: 42px;
 }
 
 .projects-section{
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px;
 }
 .projects-section > article{
   display: flex;
   flex-wrap: wrap;
-  column-gap: 80px;
-  padding: 50px 0;
+  column-gap: 50px;
+  padding-left: 50px;
   row-gap: 50px;
-  width: 760px;
+  width: 100%;
 }
 .projects-section figure {
   display: flex;
@@ -465,7 +467,7 @@ padding-bottom: 42px;
 }
 .contact-section{
   display: flex;
-  padding: 50px;
+  padding: 50px 70px;
   column-gap: 50px;
 }
 .left-contact {
@@ -544,7 +546,7 @@ padding-bottom: 42px;
   align-items: center;
 }
 .logo:last-child img{
-  transition: 1s;
+  transition: .3s;
 }
 .logo:last-child img:hover{
   transform: scale(1.4);
