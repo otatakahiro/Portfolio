@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-  <title>Takahiro Ota</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Takahiro Ota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Sigmar+One&family=Yuji+Boku&display=swap" rel="stylesheet">
   <link href="//db.onlinewebfonts.com/c/0ebe9194eb762a9b228dc9583506a35f?family=Thicker+Destroy" rel="stylesheet" type="text/css"/>
@@ -18,16 +18,16 @@
       emailjs.init("TdLE_Gd8-r584oKMY");
     })();
   </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
+
+
 <body>
   <header>
     <section class="logo">
       <figure>
-        <img src="./img/logoThree.png" alt="logo" width="200px">
+        <img src="./img/logo.png" alt="logo" width="200px">
       </figure>
-      <!-- <i class="fa-brands fa-teamspeak"></i> -->
-      <!-- <h3 class="name-logo">Taka</h3> -->
     </section>
     <nav>
       <ul>
@@ -39,28 +39,34 @@
     </nav>
   </header>
   <main>
-    <div class="sample-accordion">
-      <div class="ac-content">
-        <label class="label-accordion" for="ac-cap1">HOME</label>
-        <input id="ac-cap1" type="radio" name="ac" checked>
-        <div id="home" class="ac-cont">
-          <section class="home-section">
-            <a class="resume" href="./img/Takahiro_Ota_Resume.pdf" download="Takahiro_Ota_resume.pdf">Download My Resume</a>
-            <div>
-              <p>Hello, My name is</p>
-              <h1 class="myName">TAKAHIRO OTA</h1>
-              <h1 class="jpName">大田高裕</h1>
-            </div>
-            <button type="button" class="abouts">MORE INFORMATION</button>
-          </section>
-        </div>
 
-        <label class="label-accordion" for="ac-cap2">ABOUT ME</label>
-        <input id="ac-cap2" type="radio" name="ac">
-        <div id="about" class="ac-cont">
+
+    <div class="accordion">
+    <input type="radio" name="ac" id="ac-cap1" value="small" checked="checked" /> 
+    <label class="label-accordion" for="ac-cap1">HOME</label>
+    <div id="home" class="ac-cont">
+      <section class="home-section">
+        <a class="resume" href="./img/Takahiro_Ota_Resume.pdf" download="Takahiro_Ota_resume.pdf">Download My Resume</a>
+        <div>
+          <p>Hello, My name is</p>
+          <h1 class="myName">TAKAHIRO OTA</h1>
+          <h1 class="jpName">大田高裕</h1>
+        </div>
+        <button type="button" class="abouts">MORE INFORMATION</button>
+      </section>
+    </div>
+    </div>
+
+
+
+
+    <div class="accordion">
+    <input type="radio" name="ac" id="ac-cap2" value="medium" />     
+    <label class="label-accordion" for="ac-cap2">ABOUT ME</label>
+      <div id="about" class="ac-cont">
           <section class="about-section">
             <figure>
-              <img class="mypic" src="./img/mypic02.PNG" alt="mypic">
+              <img class="mypic" src="./img/mypic.png" alt="mypic">
               <figcaption>
                 <p>
                   My name is Takahiro Ota who is international student from Japan. I was studying about web development at the Tamwood International College for the future. And, my dream is be the fantastic web developer. I have already studied HTML, CSS, PHP, Database, JavaScript, React.js vue.js and angular.js. I graduated at the Tamwood International College at November 2022. Now, I'm looking for a job as a developer. If you have an interest in me, contact me. I'm looking forward to work with you!! Thank you!
@@ -149,117 +155,126 @@
             </section>
           </section>
         </div>
-        <label class="label-accordion" for="ac-cap3">PROJECTS</label>
-        <input id="ac-cap3" type="radio" name="ac">
-        <div id="projects" class="ac-cont">
-          <section class="projects-section">
-            <article class="fade-projects">
-              <figure>
-                <a href="">
-                  <img src="./img/img01.png" alt="Hobbies">
-                </a>
-                <figcaption>
-                  <p>HTML / SCSS</p>
-                </figcaption>
-              </figure>
-              <figure>
-                <a href="">
-                  <img src="./img/img02.png" alt="PURL">
-                </a>
-                <figcaption>
-                  <p>PHP / React</p>
-                </figcaption>
-              </figure>
-              <figure>
-                <a href="">
-                  <img src="./img/img03.png" alt="Sudoku">
-                </a>
-                <figcaption>
-                  <p>JavaScript</p>
-                </figcaption>
-              </figure>
-              <figure>
-                <a href="">
-                  <img src="./img/img04.png" alt="Peekabook">
-                </a>
-                <figcaption>
-                  <p>Angular</p>
-                </figcaption>
-              </figure>
-            </article>
-          </section>
-        </div>
-        
-        <label class="label-accordion" for="ac-cap4">CONTACT ME</label>
-        <input id="ac-cap4" type="radio" name="ac">
-        <div id="contact" class="ac-cont">
-          <section class="contact-section">
-            <article class="left-contact">
-              <div class="info">
-                <div>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="#">ota7281@gmail.com</a>
-                </div>
-                <div>
-                  <i class="fa-solid fa-phone"></i>
-                  <a href="#">+1 236-788-8441</a>
-                </div>
-              </div>
-              <div class="link">
-                <a href="https://github.com/otatakahiro"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/takahiro-ota-532521253/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/outo728/"><i class="fa-brands fa-instagram"></i></a>
-              </div>
-            </article>
-            <article class="right-contact">
-              <form class="contact-form">
-                <input type="hidden" name="contact_number">
-                <div>
-                  <label id="form-label" for="section-fname">Your Name</label>
-                  <section>
-                    <input id="input-fname" type="text" placeholder="First Name" name="fname"/>
-                    <input type="text" placeholder="Last Name" name="lname"/>
-                  </section>
-                </div>
-                <div>
-                  <label id="form-label" for="input-email">Email</label>
-                  <input id="input-email" type="email" placeholder="Email" name="email"/>
-                </div>
-                <div>
-                  <label id="form-label" for="input-phone">Phone Number</label>
-                  <input id="input-phone" type="text" placeholder="Phone Number" name="phone"/>
-                </div>
-                <div>
-                  <label id="form-label" for="text-message">Your Message</label>
-                  <textarea id="text-message" cols="30" rows="10" name="message"></textarea>
-                </div>
-                <input name="submit" type="submit"/>
-              </form>
-            </article>
-          </section>
-        </div>
-      <!--ac-content--></div>
-      <!--sample-accordion--></div>
-  </main>
-  <footer>
-    <section class="sns-link">
-      <a href="https://github.com/otatakahiro"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/takahiro-ota-532521253/"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/outo728/"><i class="fa-brands fa-instagram"></i></a>
-    </section>
-    <section class="logo">
-      <figure>
-        <a href="#">
-          <img src="./img/logoThree.png" alt="logo-footer" width="150px">
-        </a>
-      </figure>
-    </section>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-  <script src="./src.js"></script>
+    </div>
+
+
+
+
+    <div class="accordion">
+    <input type="radio" name="ac" id="ac-cap3" value="large" />     
+    <label class="label-accordion" for="ac-cap3">PROJECTS</label>
+    <div id="projects" class="ac-cont">
+      <section class="projects-section">
+        <article class="fade-projects">
+          <figure>
+            <a href="">
+              <img src="./img/img01.png" alt="Hobbies">
+            </a>
+            <figcaption>
+              <p>HTML / SCSS</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="">
+              <img src="./img/img02.png" alt="PURL">
+            </a>
+            <figcaption>
+              <p>PHP / React</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="">
+              <img src="./img/img03.png" alt="Sudoku">
+            </a>
+            <figcaption>
+              <p>JavaScript</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="">
+              <img src="./img/img04.png" alt="Peekabook">
+            </a>
+            <figcaption>
+              <p>Angular</p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </div>
+    </div>
+
+
+
+
+    <div class="accordion">    
+    <input type="radio" name="ac" id="ac-cap4" value="xlarge" />     
+    <label class="label-accordion" for="ac-cap4">CONTACT ME</label>
+    <div id="contact" class="ac-cont">
+      <section class="contact-section">
+        <article class="left-contact">
+          <div class="info">
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#">ota7281@gmail.com</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">+1 236-788-8441</a>
+            </div>
+          </div>
+          <div class="link">
+            <a href="https://github.com/otatakahiro"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/takahiro-ota-532521253/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/outo728/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </article>
+        <article class="right-contact">
+          <form class="contact-form">
+            <input type="hidden" name="contact_number">
+            <div>
+              <label id="form-label" for="section-fname">Your Name</label>
+              <section>
+                <input id="input-fname" type="text" placeholder="First Name" name="fname"/>
+                <input type="text" placeholder="Last Name" name="lname"/>
+              </section>
+            </div>
+            <div>
+              <label id="form-label" for="input-email">Email</label>
+              <input id="input-email" type="email" placeholder="Email" name="email"/>
+            </div>
+            <div>
+              <label id="form-label" for="input-phone">Phone Number</label>
+              <input id="input-phone" type="text" placeholder="Phone Number" name="phone"/>
+            </div>
+            <div>
+              <label id="form-label" for="text-message">Your Message</label>
+              <textarea id="text-message" cols="30" rows="10" name="message"></textarea>
+            </div>
+            <input name="submit" type="submit"/>
+          </form>
+        </article>
+      </section>
+    </div>
+    </div>
+</main>
+<footer>
+  <section class="sns-link">
+    <a href="https://github.com/otatakahiro"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/takahiro-ota-532521253/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/outo728/"><i class="fa-brands fa-instagram"></i></a>
+  </section>
+  <section class="logo">
+    <figure>
+      <a href="#">
+        <img src="./img/logo.png" alt="logo-footer" width="150px">
+      </a>
+    </figure>
+  </section>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script src="./src.js"></script>
 </body>
 </html>
-
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
