@@ -493,14 +493,44 @@ padding-bottom: 38px;
   flex-direction: column;
   row-gap: 10px;
   transition: .5s;
+  width: 200px;
+  height: 250px;
 }
 .projects-section img{
   width: 200px;
   height: 200px;
   border-radius: 35%;
   outline: 1px solid #112D4E;
+
 }
-.projects-section p{
+.projects-section div{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-section div > p{
+  text-align: center;
+  color: #112D4E;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 247, 247, 0.5);
+  border-radius: 35%;
+  opacity: 0;
+  transition: .5s;
+}
+.projects-section div > p:hover{
+  opacity: 1;
+}
+
+.projects-section figcaption > p{
   color: #112D4E;
   text-align: center;
   font-weight: 600;
