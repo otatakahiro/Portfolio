@@ -374,6 +374,9 @@ footer{
   display: flex;
   column-gap: 20px;
 }
+.skill p{
+  font-size: 20px;
+}
 
 .lang{
   display: flex;
@@ -467,7 +470,7 @@ footer{
 
 .iconn{
 position: absolute;
-padding-bottom: 42px;
+padding-bottom: 38px;
 }
 
 .projects-section{
