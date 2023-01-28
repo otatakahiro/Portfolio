@@ -160,6 +160,9 @@ form{
   row-gap: 15px;
   padding: 20px;
   align-items: center;
+  justify-content: center;
+  background-color: #DBE2EF;
+  border-radius: 30px;
 }
 form > div {
   display: flex;
@@ -170,12 +173,12 @@ form > div {
 form section {
   width: 100%;
   display: flex;
-  column-gap: 1%;
+  column-gap: 2%;
 }
 
 form input{
   font-size: 18px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 form > button{
@@ -192,6 +195,45 @@ footer{
   background-color: #F9F7F7;
   border-top: 2px solid #112D4E;
 }
+
+input[name="fname"],
+input[name="lname"],
+input[name="email"],
+input[name="phone"],
+textarea,
+input[name="submit"]{
+  border-radius: 7px;
+  padding: 5px;
+  background-color: #F9F7F7;
+  border-color: #112D4E;
+  width: 100%;
+  border-style: dashed;
+}
+
+input[name="email"],
+input[name="phone"],
+textarea{
+  width: 96.5%;
+}
+
+input[name="submit"]{
+  width: 40%;
+  background-color: #112D4E;
+  color: #DBE2EF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans', sans-serif;
+  border: none;
+  transition: .5s;
+}
+input[name='submit']:hover{
+  background-color: #3F72AF;
+  transform: scale(1.1);
+}
+textarea{
+  border: 2px dashed #112D4E;
+}
+
 
 #home,#about,#projects,#contact{
   background-color: #DBE2EF;
@@ -222,15 +264,9 @@ footer{
 #form-label{
   display: flex;
   flex-direction: column;
-}
-#input-email,
-#input-phone{
-  width: 99.3%;
+  font-weight: 400;
 }
 
-#text-message{
-  width: 99.7%;
-}
 .logo:first-child{
   display: flex;
   font-size: 30px;
@@ -295,11 +331,12 @@ footer{
 .resume:hover{
   cursor: grabbing;
   background-color: #3F72AF;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .abouts{
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 18px;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #112D4E;
@@ -310,7 +347,7 @@ footer{
   transition: .5s;
 }
 .abouts:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
   background-color: #3F72AF;
 }
 .about-section{
@@ -541,7 +578,7 @@ padding-bottom: 38px;
   column-gap: 50px;
 }
 .left-contact {
-  padding-top: 50px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   row-gap: 50px;
