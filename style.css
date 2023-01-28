@@ -10,8 +10,8 @@ html{
 }
 
 body{
-  /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: 'Libre Bodoni', serif;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
 }
@@ -69,6 +69,10 @@ main {
   height: 75vh;
   overflow: hidden;
 }
+
+h1{
+  font-weight: 800;
+}
 input[name='ac'] {
    display: none;
 }
@@ -82,7 +86,7 @@ input[name='ac']:checked + .ac-cont{
 
 .label-accordion { 
   /* font-family: 'Sigmar One',fantasy; */
-  font-family: 'Thicker Destroy', fantasyg;
+  font-family: 'Thicker Destroy', fantasy;
   cursor: pointer; 
   border: solid 1px transparent;
   text-align: center; 
@@ -134,6 +138,7 @@ input[name='ac']:checked + .ac-cont{
 }
 figure{
   display: flex;
+  align-items: center;
   column-gap: 10%;
 }
 figcaption{
@@ -142,9 +147,9 @@ figcaption{
 }
 figure p{
   font-size: 20px;
-  text-align: justify;
+  text-align: left;
   letter-spacing: 1.5px;
-  line-height: 25px;
+  line-height: 30px;
   width: 100%;
 }
 form{
@@ -236,11 +241,11 @@ footer{
   cursor: pointer;
 }
 
-.logo:first-child img{
+.logo:first-child img:first-child{
   transition: .3s;
 }
-.logo:first-child img:hover{
-  transform: scale(1.1);
+.logo:first-child img:first-child:hover{
+  transform: scale(1.4);
 }
 
 .home-section{
@@ -260,6 +265,7 @@ footer{
   justify-content: center;
   align-items: center;
 }
+
 .home-section p{
   color: #112D4E;
   font-size: 30px;
@@ -293,6 +299,7 @@ footer{
 }
 
 .abouts{
+  font-family: 'Merriweather Sans', sans-serif;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #112D4E;
@@ -314,29 +321,48 @@ footer{
   color: #112D4E;
 }
 .about-section h3{
+  font-weight: 800;
   font-size: 25px;
 }
 .about-section h4,
 .about-section h5{
+  font-weight: 600;
   font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.about-section h5{
+  text-align: center;
 }
 .about-section h6{
+  text-align: center;
+  font-weight: 400;
   font-size: 18px;
 }
 .education{
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 25px;
+}
+.education > section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.education div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 .skill{
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 25px;
 }
 .skill > section{
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 25px;
   width: 100%;
 }
 .skill article{
@@ -348,13 +374,21 @@ footer{
   display: flex;
   column-gap: 20px;
 }
-.skill p{
-  font-size: 20px;
+
+.lang{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.lang > section{
+  /* padding-left: 30px; */
+  display: flex;
+  justify-content: space-around;
 }
 .pro-lang{
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 25px;
 }
 .mypic {
   width: 250px;
@@ -466,6 +500,7 @@ padding-bottom: 42px;
 .projects-section p{
   color: #112D4E;
   text-align: center;
+  font-weight: 600;
 }
 .contact-section{
   display: flex;
@@ -490,6 +525,7 @@ padding-bottom: 42px;
   column-gap: 20px;
 }
 .info i{
+  font-size: 22px;
   color: #112D4E;
 }
 .info a {
