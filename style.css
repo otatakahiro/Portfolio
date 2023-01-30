@@ -220,7 +220,7 @@ input[name="submit"]{
   width: 40%;
   background-color: #112D4E;
   color: #DBE2EF;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   font-family: 'Merriweather Sans', sans-serif;
   border: none;
@@ -264,7 +264,8 @@ textarea{
 #form-label{
   display: flex;
   flex-direction: column;
-  font-weight: 400;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 600;
 }
 
 .logo:first-child{
@@ -360,6 +361,7 @@ textarea{
 .about-section h3{
   font-weight: 800;
   font-size: 25px;
+  border-bottom: 2px solid #112D4E;
 }
 .about-section h4,
 .about-section h5{
@@ -368,13 +370,18 @@ textarea{
   letter-spacing: 1px;
   word-spacing: 2px;
 }
+.about-section h4{
+  border-bottom: 2px groove #112D4E;
+  width: fit-content;
+  padding-bottom: 5px;
+}
 .about-section h5{
   text-align: center;
 }
 .about-section h6{
   text-align: center;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
 }
 .education{
   display: flex;
@@ -488,6 +495,9 @@ textarea{
 .fa-angular,
 .fa-vuejs{
   font-size: 50px;
+}
+.pro-lang p{
+  font-weight: 400;
 }
 .fadein-before{
   /*透過度の設定。0で表示されなくなる。*/
@@ -628,7 +638,6 @@ padding-bottom: 38px;
 .right-contact {
   width: 100%;
 }
-
 .sns-link{
   display: flex;
   width: 10%;

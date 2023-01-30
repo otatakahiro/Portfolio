@@ -184,5 +184,5 @@ Fade.addEventListener('scroll', () => {
         FADEIN_ELEM.classList.remove('fadein-after');
         scrollFlag = false;
     }
-    ProFade.classList.add('fadein-before');
+    // ProFade.classList.add('fadein-before');
 });
