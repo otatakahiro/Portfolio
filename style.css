@@ -134,7 +134,8 @@ input[name='ac']:checked + .ac-cont{
 }
 
 .accordion > input:checked ~ .ac-cont {
-  width: 55.58%; opacity: 1;
+  width: 55.58%;
+  opacity: 1;
 }
 figure{
   display: flex;
